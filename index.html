@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speck Academy 2023</title>
+    <link href = "style.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src = "index.js" defer></script>
+  </head>
+
+  <body>
+    <div class = "container">
+      <h1 class = "heading">My technologies</h1>
+      <div class = "functionality">
+        <div class = "add-button-input">
+          <input type = "text" id = "input" placeholder= "Enter new technology..."/>
+          <button type = "button" onclick = "addItem()" class = "add-button">Add</button>
+        </div>
+        <button onclick = "removeAllItems()" class = "remove-button">Remove all items</button>
+      </div>
+      <div id = "list" class = "grid-container">
+
+      </div>
+    </div>
+  </body>
+</html>

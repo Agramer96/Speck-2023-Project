@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 5rem 10rem 0rem 10rem;
+  width: 65rem;
+}
+
+.heading {
+  margin-bottom: 2.5rem;
+}
+
+input {
+  padding: 0.5rem 5rem 0.5rem 1rem;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: 'Montserrat', sans-serif;
+  border-color: black;
+  border-style: solid;
+}
+
+input:focus {
+  outline: none;
+  border-color: #b83130;
+}
+
+.add-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border-width: 1px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: #fceae5;
+  color: #b83130;
+  border-color: #b83130;
+  border-style: solid;
+}
+
+.add-button:hover {
+  transition: 0.7s;
+  color: white;
+  background: #b83130;
+  cursor: pointer;
+}
+
+.remove-button {
+  border-style: none;
+  background: none;
+  justify-content: right;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  color: red;
+}
+
+.remove-button:hover {
+  cursor: pointer;
+}
+
+.grid-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.5rem;
+}
+
+.grid-item {
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.functionality {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add-button-input {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+@media(max-width: 818px) {
+  .functionality {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .add-button-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+}
+
